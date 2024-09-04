@@ -18,9 +18,7 @@ def send_slack_message(message, channel):
 def main():
     for cluster in clusters:
         # 메시지 제목 설정
-        header = f":loudspeaker: *『인사총무팀 공지』* curl -X POST -H 'Content-type: application/json' \
-          --data '{"text":"@channel 새로운 Pull Request가 생성되었습니다: ${{ github.event.pull_request.html_url }}"}' \
-          ${{ secrets.SLACK_WEBHOOK_URL }}"
+        header = f":loudspeaker: *『인사총무팀 공지』* @channel\n\n"
 
 
         notice_msg = (
