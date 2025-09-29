@@ -5,6 +5,7 @@ on:
   schedule:
   - cron: "0 4 * * 1" # 세계 표준시 기준으로 04시는 한국시간 오후 13시
   
+  
 jobs:
   post_announcement_message:
     runs-on: ubuntu-latest
